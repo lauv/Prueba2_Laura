@@ -11,7 +11,7 @@ User.destroy_all
 Category.destroy_all
 
 2.times do |c|
-	Category.create(name:"Categoria #{c}"))
+	Category.create(name:"Categoria #{c}")
 end
 
 c = Category.last
