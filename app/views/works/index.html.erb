@@ -1,0 +1,23 @@
+<h1>Works#index</h1>
+
+
+<table>
+	<tr>
+		<td>Usuario</td>
+		<td>Item</td>
+		<td>Categoria</td>
+	</tr>
+	<% @i.each do |i| %>
+		<tr>
+			<td><%= if i.user== nil then 'Sin Usuario' else i.user.name end %></td>
+			<td><%= i.serie %></td>
+			<td><%= i.category.name %></td>
+			<%= form_tag(:action => "index") do %>	
+			<td><button><%= link_to "delete item","delete_item" %></button></td>
+		<% end -%>
+		</tr>
+		<tr>
+			
+		</tr>
+	<% end %>
+</table>
